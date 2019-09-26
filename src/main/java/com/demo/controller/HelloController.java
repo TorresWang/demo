@@ -15,7 +15,7 @@ public class HelloController {
 	@RequestMapping("/getUser")
 	public User getUser() {
 		User user = new User();
-		user.setName("wjy");
+		user.setName("wangjy");
 		user.setPassword("ftorres9");
 		return user;
 	}
