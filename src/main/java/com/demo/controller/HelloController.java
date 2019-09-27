@@ -3,7 +3,7 @@ package com.demo.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.demo.pojo.User;
+import com.demo.pojo.UserInfo;
 
 @RestController
 public class HelloController {
@@ -13,8 +13,8 @@ public class HelloController {
 	}
 	
 	@RequestMapping("/getUser")
-	public User getUser() {
-		User user = new User();
+	public UserInfo getUser() {
+		UserInfo user = new UserInfo();
 		user.setName("wangjy");
 		user.setPassword("ftorres9");
 		return user;
