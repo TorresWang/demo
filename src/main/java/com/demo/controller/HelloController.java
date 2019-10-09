@@ -1,5 +1,6 @@
 package com.demo.controller;
 
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,6 +14,7 @@ public class HelloController {
 	}
 	
 	@RequestMapping("/getUser")
+	@Cacheable(value="user-key")
 	public UserInfo getUser() {
 		UserInfo user = new UserInfo();
 		user.setName("wangjy");
