@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableCaching
+@EnableCaching//开启缓存
 public class RedisConfig extends CachingConfigurerSupport {
 	
 	@Bean
